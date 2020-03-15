@@ -41,6 +41,10 @@ jar -xf ../shopos.war
 cd ..
 
 Don’t forget to set the outgoing email, and enable less secure email.
+
+Changing the temporary folder
+sudo java -Djava.io.tmpdir=./photo -jar tomcat.jar --port 80 shopos.war
+
 ```
 
 ## Useful Links
