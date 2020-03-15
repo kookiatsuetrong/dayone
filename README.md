@@ -1,4 +1,4 @@
-![](dayone.png)
+![](ogp.png)
 
 Day one is the first day of the rest of your life.
 
