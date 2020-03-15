@@ -61,6 +61,29 @@ Shipping Address /address-list
 
 ## Web Services
 
+Check Service
+```
+curl                http://localhost:3000/service/check
+curl --request POST http://localhost:3000/service/check-post
+```
+
+Log In with Email and Password
+```
+curl \
+--data 'email=user@email.com&password=password' \
+--verbose \
+--request POST http://localhost:3000/service/user-login
+```
+
+Check status of current user
+```
+curl http://localhost:3000/service/user-current
+curl \
+--header 'Cookie: JSESSIONID=WXYZ;' \
+http://localhost:3000/service/user-current
+```
+
+
 
 ## Testing
 
