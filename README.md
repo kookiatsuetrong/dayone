@@ -49,18 +49,17 @@ sudo java -Djava.io.tmpdir=./photo -jar tomcat.jar --port 80 shopos.war
 
 ## Useful Links
 ```
-Setup            /setup
-Register         /user-register
-Activation       /user-activation
-Log In           /user-login
-Log Out          /user-logout
-Home             /user-home
-Change Password  /user-change-password
+Setup              /setup
+Register           /user-register
+Activation         /user-activation
+Log In             /user-login
+Log Out            /user-logout
+Home               /user-home
+Change Password    /user-change-password
 
-Shopping Basket  /basket
-View Orders      /order-list
-Shipping Address /address-list
-
+Shopping Basket    /basket
+View Orders        /order-list
+Shipping Address   /address-list
 ```
 
 ## Web Services
@@ -90,6 +89,24 @@ http://localhost:3000/service/user-current
 
 
 ## Testing
+
+### User Acceptance Test (UAT)
+
+General System:
+
+User Registration:
+
+Password Recover:
+
+User Settings:
+
+Checkout and Address:
+
+User Management:
+
+Product and Category Management:
+
+
 
 ### Compatibility Test
 
