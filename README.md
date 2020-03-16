@@ -123,4 +123,6 @@ The Selenium project is here: https://github.com/kookiatsuetrong/dayone-selenium
 ## React Native
 The React Native mobile application is here: https://github.com/kookiatsuetrong/dayone-mobile
 
+## Theme Customization
+
 
