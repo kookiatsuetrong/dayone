@@ -1,7 +1,8 @@
 ![](ogp.png)
 
-Day one is the first day of the rest of your life.
 
+## Demo
+The demo web site: http://codestar.work:3000
 
 ## Installation
 
