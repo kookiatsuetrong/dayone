@@ -113,6 +113,15 @@ Product and Category Management:
 
 DBMS: MySQL, Oracle, SQL Server, DB2, PostgreSQL
 
+Installing PostgreSQL on Ubuntu Server
+```
+sudo apt update
+sudo apt install postgresql
+sudo --user postgres createdb shopos
+sudo --user postgres psql
+\password
+\q
+```
 
 ### Performance Test
 
