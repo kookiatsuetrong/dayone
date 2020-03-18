@@ -98,8 +98,51 @@ http://localhost:3000/service/user-current
 ### GlassFish
 
 ### Open Liberty
+```
+bin/server create dayone
+cp dayone.war usr/servers/dayone/apps
+
+vi usr/servers/dayone/server.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<server description="new server">
+    <featureManager>
+        <feature>servlet-4.0</feature>
+    </featureManager>
+
+    <httpEndpoint id="app" host="*" httpPort="9001" />
+    <webApplication contextRoot="/" location="dayone.war" />
+    <applicationManager autoExpand="true"/>
+</server>
+```
+
+## Database Management System
+
+### MySQL
+
+### PostgreSQL
+```
+sudo apt update
+sudo apt install postgresql
+sudo --user postgres psql
+\password
+\q
+sudo --user postgres createdb shopos
+sudo --user postgres psql -d shopos
+```
+
+And change the persistence.xml as follow:
+```
+Driver:     org.postgresql.jdbc.Driver
+URL:        jdbc:postgresql://localhost/shopos
+User:       postgres
+Password:   xxxx
+```
+### Derby
+
 
 ## Docker
+How to use this web application with Docker.
 
 ## Testing
 
