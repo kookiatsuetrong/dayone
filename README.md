@@ -87,7 +87,19 @@ curl \
 http://localhost:3000/service/user-current
 ```
 
+## Application Servers
 
+### Tomcat
+
+
+### Jetty
+
+
+### GlassFish
+
+### Open Liberty
+
+## Docker
 
 ## Testing
 
@@ -135,4 +147,5 @@ The React Native mobile application is here: https://github.com/kookiatsuetrong/
 
 ## Theme Customization
 
-
+## Ticket System
+The technical support ticket system is here: https://github.com/kookiatsuetrong/dayone-support
