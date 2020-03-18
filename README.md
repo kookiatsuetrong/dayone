@@ -182,7 +182,21 @@ The Selenium project is here: https://github.com/kookiatsuetrong/dayone-selenium
 The React Native mobile application is here: https://github.com/kookiatsuetrong/dayone-mobile
 
 ## Theme Customization
-
+```
++ dayone
+  +-- images
+  +-- public
+      +-- css
+      +-- js
+  +-- theme
+      +-- xxxx.html
+      +-- xxxx.html
+      +-- xxxx.html
+  +-- WEB-INF
+      +-- web.xml
+      +-- web-servlet.xml
+```   
+      
 ## Ticket System
 The technical support ticket system is here: https://github.com/kookiatsuetrong/dayone-support
 
