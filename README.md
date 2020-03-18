@@ -114,6 +114,12 @@ vi usr/servers/dayone/server.xml
 ## Database Management System
 
 ### MySQL
+```
+sudo apt install mysql-server
+sudo mysql --execute="create database shopos default charset 'UTF8';"
+sudo mysql --execute="create user james identified with mysql_native_password by 'bond';"
+sudo mysql --execute="grant all on shopos.* to james;"
+```
 
 ### PostgreSQL
 ```
@@ -138,7 +144,7 @@ Password:   xxxx
 
 
 ## Docker
-How to use this web application with Docker.
+How to use it with Docker.
 
 ## Testing
 
@@ -164,15 +170,6 @@ Product and Category Management:
 
 DBMS: MySQL, Oracle, SQL Server, DB2, PostgreSQL
 
-Installing PostgreSQL on Ubuntu Server
-```
-sudo apt update
-sudo apt install postgresql
-sudo --user postgres createdb shopos
-sudo --user postgres psql
-\password
-\q
-```
 
 ### Performance Test
 
