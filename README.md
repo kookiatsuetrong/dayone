@@ -27,24 +27,19 @@ wget https://codestar.work/jetty.jar
 Download Shop OS
 wget https://codestar.work/shopos.war
 
-Run the web
-sudo java -jar tomcat.jar --port 80 shopos.war
-
-Setup the shop
-http://xxx.xxx.xxx.xxx/setup
-
-Finally you can login and add a category and product from the System menu.
-
 Extracting a .war file
 mkdir shopos
 cd shopos
 jar -xf ../shopos.war
 cd ..
 
-Don’t forget to set the outgoing email, and enable less secure email.
+sudo java -jar tomcat.jar --port 80 shopos
 
-Changing the temporary folder
-sudo java -Djava.io.tmpdir=./photo -jar tomcat.jar --port 80 shopos.war
+Setup the shop
+http://xxx.xxx.xxx.xxx/setup
+
+Finally you can login and add a category and product from the System menu.
+Don’t forget to set the outgoing email, and enable less secure email.
 
 ```
 
@@ -138,6 +133,7 @@ URL:        jdbc:postgresql://localhost/shopos
 User:       postgres
 Password:   xxxx
 ```
+
 ### Derby
 
 
@@ -192,3 +188,5 @@ The React Native mobile application is here: https://github.com/kookiatsuetrong/
 
 ## Ticket System
 The technical support ticket system is here: https://github.com/kookiatsuetrong/dayone-support
+
+
