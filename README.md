@@ -195,7 +195,12 @@ The React Native mobile application is here: https://github.com/kookiatsuetrong/
   +-- WEB-INF
       +-- web.xml
       +-- web-servlet.xml
-```   
+```
+
+## The Main Web
+
+The main web application of the project: https://github.com/kookiatsuetrong/dayone-web
+
       
 ## Ticket System
 The technical support ticket system is here: https://github.com/kookiatsuetrong/dayone-support
