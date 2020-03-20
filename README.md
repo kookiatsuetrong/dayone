@@ -183,18 +183,21 @@ The React Native mobile application is here: https://github.com/kookiatsuetrong/
 
 ## Theme Customization
 ```
-+ dayone
-  +-- images
-  +-- public
-      +-- css
-      +-- js
-  +-- theme
-      +-- xxxx.html
-      +-- xxxx.html
-      +-- xxxx.html
-  +-- WEB-INF
-      +-- web.xml
-      +-- web-servlet.xml
++-- dayone
+    +-- images
+    +-- public
+    |   +-- main.css
+    |   +-- css
+    |   |   +-- ...
+    |   +-- js
+    |       +-- ...
+    +-- theme
+    |   +-- xxxx.html
+    |   +-- xxxx.html
+    |   +-- xxxx.html
+    +-- WEB-INF
+        +-- web.xml
+        +-- web-servlet.xml
 ```
 
 ## The Main Web
