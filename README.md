@@ -211,10 +211,10 @@ The technical support ticket system is here: https://github.com/kookiatsuetrong/
 
 ## Mark Left
 Mark Left is simple markup language, just support 
-- topic #, 
+- topic #
 - paragraph (empty line)
 - image !
-- bullet *
+- bullet -
 - superscript ^
 - subscript _
 - bold %
