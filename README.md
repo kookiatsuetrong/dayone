@@ -1,4 +1,4 @@
-![](ogp.png)
+![](dayone-ogp.png)
 
 
 ## Demo
