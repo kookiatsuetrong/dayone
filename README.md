@@ -209,3 +209,16 @@ The main web application of the project: https://github.com/kookiatsuetrong/dayo
 The technical support ticket system is here: https://github.com/kookiatsuetrong/dayone-support
 
 
+## Mark Left
+Mark Left is simple markup language, just support 
+- topic #, 
+- paragraph (empty line)
+- image !
+- bullet *
+- superscript ^
+- subscript _
+- bold %
+
+Every markup symbols is on the left hand side, so it named "Mark Left".
+
+
