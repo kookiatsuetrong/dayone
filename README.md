@@ -13,27 +13,27 @@ Update repository:
 sudo apt update
 
 sudo apt install mysql-server
-sudo mysql --execute="create database shopos default charset 'UTF8';"
+sudo mysql --execute="create database shop default charset 'UTF8';"
 sudo mysql --execute="create user james identified with mysql_native_password by 'bond';"
-sudo mysql --execute="grant all on shopos.* to james;"
+sudo mysql --execute="grant all on shop.* to james;"
 
-Install OpenJDK:
-sudo apt install default-jdk
+Install OpenJDK, zip and tree:
+sudo apt install default-jdk zip tree
 
 Download Tomcat or Jetty stand-alone edition
-wget https://codestar.work/tomcat.jar
-wget https://codestar.work/jetty.jar
+wget https://dayoneteam.com/tomcat.jar
+wget https://dayoneteam.com/jetty.jar
 
-Download Shop OS
-wget https://codestar.work/shopos.war
+Download DayOne Shop
+wget https://dayoneteam/shop.war
 
 Extracting a .war file
-mkdir shopos
-cd shopos
-jar -xf ../shopos.war
+mkdir shop
+cd shop
+jar -xf ../shop.war
 cd ..
 
-sudo java -jar tomcat.jar --port 80 shopos
+sudo java -jar tomcat.jar --port 80 shop
 
 Setup the shop
 http://xxx.xxx.xxx.xxx/setup
