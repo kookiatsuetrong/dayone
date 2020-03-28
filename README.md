@@ -60,27 +60,87 @@ Shipping Address   /address-list
 
 ## Web Services
 
-Check Service
+### Check Status
+
 ```
-curl                http://localhost:3000/service/check
-curl --request POST http://localhost:3000/service/check-post
+curl                http://localhost:3000/service
+
+curl --request POST http://localhost:3000/service
 ```
 
-Log In with Email and Password
+### Login
+
 ```
 curl \
---data 'email=user@email.com&password=password' \
+--data 'email=user@email.com&password=P@ssw0rd' \
 --verbose \
---request POST http://localhost:3000/service/user-login
-```
+--request POST \
+http://localhost:3000/service/user-login
 
-Check status of current user
-```
 curl http://localhost:3000/service/user-current
+
 curl \
---header 'Cookie: JSESSIONID=WXYZ;' \
+--header 'Cookie: JSESSIONID=55184416D4D32BE042DF34CE203B1C91;' \
 http://localhost:3000/service/user-current
 ```
+
+### List Category / Product
+```
+curl http://localhost:3000/service/category-list
+curl http://localhost:3000/service/product-list
+```
+
+### Get Basket
+```
+curl \
+--header 'Cookie: JSESSIONID=EBC5365AC563A521846660B594D197DB;' \
+http://localhost:3000/service/basket
+```
+
+### Add or Delete Product in Basket
+```
+curl \
+--header 'Cookie: JSESSIONID=B8E97862E0DF47DA31A067FB27105F42;' \
+http://localhost:3000/service/basket-add?id=2
+
+curl \
+--header 'Cookie: JSESSIONID=B8E97862E0DF47DA31A067FB27105F42;' \
+http://localhost:3000/service/basket-decrease?id=2
+```
+
+### List Address
+```
+curl \
+--header 'Cookie: JSESSIONID=689F94DD73144C553D02287A4B9F3471;' \
+http://localhost:3000/service/address-list
+```
+
+### Add Address
+```
+curl \
+--header 'Cookie: JSESSIONID=689F94DD73144C553D02287A4B9F3471;' \
+--request POST \
+--data "name=Receiver&address=123 My Street&city=My City&" \
+--data "state=My State&zip=12345&country=THAILAND&" \
+--data "phone=+6612345678&email=user@email.com&comment=(No Comment)" \
+http://localhost:3000/service/address-save
+```
+
+### Delete Address
+```
+curl \
+--header 'Cookie: JSESSIONID=689F94DD73144C553D02287A4B9F3471;' \
+http://localhost:3000/service/address-delete?id=9
+```
+
+### Commit to Buy
+
+
+### List Payment Methods
+
+
+### Upload Payment Slip
+
 
 ## Application Servers
 
