@@ -60,6 +60,7 @@ Shipping Address   /address-list
 
 ## Web Services
 
+
 ### Check Status
 
 ```
@@ -80,7 +81,7 @@ http://localhost:3000/service/user-login
 curl http://localhost:3000/service/user-current
 
 curl \
---header 'Cookie: JSESSIONID=55184416D4D32BE042DF34CE203B1C91;' \
+--header 'Cookie: JSESSIONID=4F8F394F0C5979BEE7C3D14D3DA1FB0B;' \
 http://localhost:3000/service/user-current
 ```
 
@@ -93,32 +94,39 @@ curl http://localhost:3000/service/product-list
 ### Get Basket
 ```
 curl \
---header 'Cookie: JSESSIONID=EBC5365AC563A521846660B594D197DB;' \
+--header 'Cookie: JSESSIONID=4F8F394F0C5979BEE7C3D14D3DA1FB0B;' \
 http://localhost:3000/service/basket
 ```
 
 ### Add or Delete Product in Basket
 ```
 curl \
---header 'Cookie: JSESSIONID=B8E97862E0DF47DA31A067FB27105F42;' \
+--header 'Cookie: JSESSIONID=4F8F394F0C5979BEE7C3D14D3DA1FB0B;' \
 http://localhost:3000/service/basket-add?id=2
 
 curl \
---header 'Cookie: JSESSIONID=B8E97862E0DF47DA31A067FB27105F42;' \
+--header 'Cookie: JSESSIONID=4F8F394F0C5979BEE7C3D14D3DA1FB0B;' \
 http://localhost:3000/service/basket-decrease?id=2
 ```
 
 ### List Address
 ```
 curl \
---header 'Cookie: JSESSIONID=689F94DD73144C553D02287A4B9F3471;' \
+--header 'Cookie: JSESSIONID=4F8F394F0C5979BEE7C3D14D3DA1FB0B;' \
 http://localhost:3000/service/address-list
+```
+
+### Get Address Detail
+```
+curl \
+--header 'Cookie: JSESSIONID=4F8F394F0C5979BEE7C3D14D3DA1FB0B;' \
+http://localhost:3000/service/address-detail?id=123
 ```
 
 ### Add Address
 ```
 curl \
---header 'Cookie: JSESSIONID=689F94DD73144C553D02287A4B9F3471;' \
+--header 'Cookie: JSESSIONID=4F8F394F0C5979BEE7C3D14D3DA1FB0B;' \
 --request POST \
 --data "name=Receiver&address=123 My Street&city=My City&" \
 --data "state=My State&zip=12345&country=THAILAND&" \
@@ -129,8 +137,29 @@ http://localhost:3000/service/address-save
 ### Delete Address
 ```
 curl \
---header 'Cookie: JSESSIONID=689F94DD73144C553D02287A4B9F3471;' \
+--header 'Cookie: JSESSIONID=4F8F394F0C5979BEE7C3D14D3DA1FB0B;' \
 http://localhost:3000/service/address-delete?id=9
+```
+
+### List Orders
+```
+curl \
+--header 'Cookie: JSESSIONID=4F8F394F0C5979BEE7C3D14D3DA1FB0B;' \
+http://localhost:3000/service/order-list
+```
+
+### Get Order Detail
+```
+curl \
+--header 'Cookie: JSESSIONID=4F8F394F0C5979BEE7C3D14D3DA1FB0B;' \
+http://localhost:3000/service/order-detail?id=123
+```
+
+### Search Product
+```
+curl \
+--header 'Cookie: JSESSIONID=4F8F394F0C5979BEE7C3D14D3DA1FB0B;' \
+http://localhost:3000/service/search?query=abc
 ```
 
 ### Commit to Buy
@@ -140,6 +169,7 @@ http://localhost:3000/service/address-delete?id=9
 
 
 ### Upload Payment Slip
+
 
 
 ## Application Servers
