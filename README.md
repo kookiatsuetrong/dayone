@@ -25,7 +25,7 @@ wget https://dayoneteam.com/public/tomcat.jar
 wget https://dayoneteam.com/public/jetty.jar
 
 Download DayOne Shop
-wget https://dayoneteam/public/shop.war
+wget https://dayoneteam.com/public/shop.war
 
 Extracting a .war file
 mkdir shop
