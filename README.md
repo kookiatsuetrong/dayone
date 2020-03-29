@@ -69,7 +69,7 @@ curl                http://localhost:3000/service
 curl --request POST http://localhost:3000/service
 ```
 
-### Login
+### Log In
 
 ```
 curl \
@@ -83,6 +83,11 @@ curl http://localhost:3000/service/user-current
 curl \
 --header 'Cookie: JSESSIONID=4F8F394F0C5979BEE7C3D14D3DA1FB0B;' \
 http://localhost:3000/service/user-current
+```
+
+### Log Out
+```
+curl http://localhost:3000/service/user-logout
 ```
 
 ### List Category / Product
