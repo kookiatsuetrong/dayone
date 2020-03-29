@@ -21,11 +21,11 @@ Install OpenJDK, zip and tree:
 sudo apt install default-jdk zip tree
 
 Download Tomcat or Jetty stand-alone edition
-wget https://dayoneteam.com/tomcat.jar
-wget https://dayoneteam.com/jetty.jar
+wget https://dayoneteam.com/public/tomcat.jar
+wget https://dayoneteam.com/public/jetty.jar
 
 Download DayOne Shop
-wget https://dayoneteam/shop.war
+wget https://dayoneteam/public/shop.war
 
 Extracting a .war file
 mkdir shop
