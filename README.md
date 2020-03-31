@@ -1,9 +1,5 @@
 ![](dayone-ogp.png)
 
-
-## Demo
-The demo web site: http://codestar.work:3000
-
 ## Installation
 
 ```
