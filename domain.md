@@ -18,14 +18,15 @@ wanted.
 
 ![](domains-google-02.png)
 
-Then
+If the domain name is available, you can
+add to your shopping cart.
 
 ![](domains-google-03.png)
 
-Then
+Proceed to check out.
 
 ![](domains-google-04.png)
 
-Then
+Finish.
 
 ![](domains-google-05.png)
