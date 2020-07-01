@@ -9,9 +9,9 @@ Update repository:
 sudo apt update
 
 sudo apt install mysql-server
-sudo mysql --execute="create database shop default charset 'UTF8';"
-sudo mysql --execute="create user james identified with mysql_native_password by 'bond';"
-sudo mysql --execute="grant all on shop.* to james;"
+sudo mysql --execute="create database shop default charset 'UTF8'"
+sudo mysql --execute="create user dayone identified with mysql_native_password by 'oneday'"
+sudo mysql --execute="grant all on shop.* to dayone"
 
 Install OpenJDK, zip and tree:
 sudo apt install default-jdk zip tree
@@ -56,6 +56,13 @@ Shipping Address   /address-list
 
 ## Web Services
 
+### Check Status
+
+```
+curl                http://localhost:3000/service
+
+curl --request POST http://localhost:3000/service
+```
 
 ### Check Status
 
