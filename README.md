@@ -1,5 +1,10 @@
 ![](dayone-ogp.png)
 
+DayOne is a Java web application for online shop. It can run on any Java web server including Tomcat, Jetty, WebSphere Liberty and all.
+It also support many database management systems, such as MySQL, Oracle, SQL Server and SAP HANA.
+
+![](dayone.png)
+
 ## Installation
 
 ```
