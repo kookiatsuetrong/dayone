@@ -32,6 +32,7 @@ Extracting a .war file
 mkdir shop
 cd shop
 jar -xf ../shop.war
+mkdir images
 cd ..
 
 sudo java -jar tomcat.jar --port 80 shop
