@@ -14,19 +14,24 @@ Update repository:
 sudo apt update
 
 sudo apt install mysql-server
-sudo mysql --execute="create database shop default charset 'UTF8'"
-sudo mysql --execute="create user dayone identified with mysql_native_password by 'oneday'"
-sudo mysql --execute="grant all on shop.* to dayone"
 
-Install OpenJDK, zip and tree:
-sudo apt install default-jdk zip tree
+Download and execute schema
+wget https://codestar.work/dayone.sql
+sudo mysql --execute="source dayone.sql"
+
+Install zip and tree:
+sudo apt install zip tree
+
+Download and Install Amazon Corretto OpenJDK 16
+wget https://corretto.aws/downloads/latest/amazon-corretto-16-x64-linux-jdk.deb
+sudo dpkg -i amazon-corretto-16-x64-linux-jdk.deb
 
 Download Tomcat or Jetty stand-alone edition
 wget https://codestar.work/tomcat.jar
 wget https://codestar.work/jetty.jar
 
 Download DayOne Shop
-wget https://codestar.work/shop.war
+wget https://codestar.work/dayone.war
 
 Extracting a .war file
 mkdir shop
