@@ -19,8 +19,8 @@ Download and execute schema
 wget https://codestar.work/dayone.sql
 sudo mysql --execute="source dayone.sql"
 
-Install zip and tree:
-sudo apt install zip tree
+Install java-common zip and tree:
+sudo apt install java-common zip tree
 
 Download and Install Amazon Corretto OpenJDK 16
 wget https://corretto.aws/downloads/latest/amazon-corretto-16-x64-linux-jdk.deb
